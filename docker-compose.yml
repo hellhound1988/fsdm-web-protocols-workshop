@@ -1,0 +1,42 @@
+version: "3.9"
+services:
+  client:
+    build:
+      context: client
+    ports:
+      - 1234:3000
+
+  server-demo1:
+    build:
+      context: server
+    command: npm run start:demo1
+    ports:
+      - 13001:13001
+
+  server-demo2:
+    build:
+      context: server
+    command: npm run start:demo2
+    ports:
+      - 13002:13002
+
+  server-demo3:
+    build:
+      context: server
+    command: npm run start:demo3
+    ports:
+      - 13003:13003
+
+  server-demo4:
+    build:
+      context: server
+    command: npm run start:demo4
+    ports:
+      - 13004:13004
+
+  server-demo5:
+    build:
+      context: server
+    command: npm run start:demo5
+    ports:
+      - 13005:13005
