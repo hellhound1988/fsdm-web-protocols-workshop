@@ -40,3 +40,26 @@ services:
     command: npm run start:demo5
     ports:
       - 13005:13005
+
+  server-demo6:
+    build:
+      context: server
+    command: npm run start:demo6
+    ports:
+      - 13006:13006
+
+  server-demo7:
+    build:
+      context: server
+    command: npm run start:demo7
+    ports:
+      - 13007:13007
+
+  envoy-grpc-proxy:
+    image: envoyproxy/envoy:latest
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
+    ports:
+      - 9211:9211
+      - 9901:9901
+

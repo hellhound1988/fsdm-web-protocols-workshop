@@ -22,6 +22,8 @@ import Demo3 from './components/demo3-hol/Demo3';
 import Demo4 from './components/demo4-graphql/Demo4';
 import Demo5 from './components/demo5-http2/Demo5';
 import Demo8 from './components/demo8-http3/Demo8';
+import Demo6 from './components/demo6-ws/Demo6';
+import Demo7 from './components/demo7-grpc/Demo7';
 
 const drawerWidth = 240;
 
@@ -107,6 +109,16 @@ export default function App() {
       name: 'Demo 5 - HTTP/2',
       url: '/demo5-http2',
       component: Demo5,
+    },
+    {
+      name: 'Demo 6 - WebSocket',
+      url: '/demo6-ws',
+      component: Demo6,
+    },
+    {
+      name: 'Demo 7 - gRPC',
+      url: '/demo7-grpc',
+      component: Demo7,
     },
     {
       name: 'Demo 8 - HTTP/3',

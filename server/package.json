@@ -11,6 +11,8 @@
     "start:demo7": "node src/demo7-grpc/server.js"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.7.1",
+    "@grpc/proto-loader": "^0.7.3",
     "cors": "^2.8.5",
     "express": "^5.0.0-beta.1",
     "express-graphql": "^0.12.0",
