@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+service DemoService {
+    rpc GetProfile (Empty) returns (Profile) {}
+    rpc GetLocation (Empty) returns (Location) {}
+    rpc GetHistory (Empty) returns (stream HistoryEntry) {}
+}
+
+message Empty {}
+
+message Profile {
+    int32 id = 1;
+    string name = 2;
+    string title = 3;
+    string company = 4;
+}
+
+message Location {
+    string country = 1;
+    string state = 2;
+    string city = 3;
+    string timezone = 4;
+}
+
+message HistoryEntry {
+    int32 id = 1;
+    string time = 2;
+    string entry = 3;
+}
