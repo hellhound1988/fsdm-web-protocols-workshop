@@ -5,7 +5,6 @@ export default function Demo6() {
   const [httpEvents, setHttpEvents] = React.useState([]);
   const [wsEvents, setWsEvents] = React.useState([]);
 
-
   const loadDataOverHttp = async () => {
     const events = [`[${new Date().toLocaleString()}]: Request started`];
     setHttpEvents(events);

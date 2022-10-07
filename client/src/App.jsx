@@ -21,9 +21,9 @@ import Demo2 from './components/demo2-streaming/Demo2';
 import Demo3 from './components/demo3-hol/Demo3';
 import Demo4 from './components/demo4-graphql/Demo4';
 import Demo5 from './components/demo5-http2/Demo5';
-import Demo8 from './components/demo8-http3/Demo8';
 import Demo6 from './components/demo6-ws/Demo6';
 import Demo7 from './components/demo7-grpc/Demo7';
+import Demo8 from './components/demo8-http3/Demo8';
 
 const drawerWidth = 240;
 

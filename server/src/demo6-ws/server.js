@@ -17,21 +17,21 @@ app.get('/api/long-polling', function (req, res) {
 });
 
 wsServer.on('connection', (ws) => {
-    ws.on('message', (message) => {
-        if (message == 'long_request') {
+  ws.on('message', (message) => {
+    if (message == 'long_request') {
+      setTimeout(() => {
+        ws.send(`Step 1 is processed`);
+        setTimeout(() => {
+          ws.send(`Step 2 is processed`);
           setTimeout(() => {
-            ws.send(`Step 1 is processed`);
-            setTimeout(() => {
-              ws.send(`Step 2 is processed`);
-              setTimeout(() => {
-                ws.send(`Step 3 is processed`);
-              }, 3000 + Math.random() * 1000);
-            }, 3000 + Math.random() * 1000);
+            ws.send(`Step 3 is processed`);
           }, 3000 + Math.random() * 1000);
-        } else {
-          ws.send(`Unrecognized client message: ${message}`);
-        }
-    });
+        }, 3000 + Math.random() * 1000);
+      }, 3000 + Math.random() * 1000);
+    } else {
+      ws.send(`Unrecognized client message: ${message}`);
+    }
+  });
 });
 
 server.listen(13006, () => {

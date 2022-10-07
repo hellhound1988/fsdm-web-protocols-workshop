@@ -10,6 +10,8 @@
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.5.1",
+    "google-protobuf": "^3.21.0",
+    "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
     "grpc-web": "^1.4.1",
     "react": "^17.0.2",

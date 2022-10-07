@@ -56,9 +56,9 @@ services:
       - 13007:13007
 
   envoy-grpc-proxy:
-    image: envoyproxy/envoy:latest
+    image: bitnami/envoy:latest
     volumes:
-      - ./envoy.yaml:/etc/envoy/envoy.yaml
+      - ./server/envoy.yaml:/opt/bitnami/envoy/conf/envoy.yaml
     ports:
       - 9211:9211
       - 9901:9901

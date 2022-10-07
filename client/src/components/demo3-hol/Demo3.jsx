@@ -4,8 +4,8 @@ import React from 'react';
 export default function Demo3() {
   const loadData = async () => {
     for (let i = 0; i < 50; i++) {
-      const style = document.createElement("link");
-      style.href = "http://localhost:13003/style.css?" + i;
+      const style = document.createElement('link');
+      style.href = 'http://localhost:13003/style.css?' + i;
       style.rel = 'stylesheet';
       document.body.appendChild(style);
     }

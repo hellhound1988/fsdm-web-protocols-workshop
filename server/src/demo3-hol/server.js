@@ -6,7 +6,7 @@ app.use(cors());
 
 app.get('/style.css', function (req, res) {
   setTimeout(() => {
-    res.setHeader('Content-Type', 'text/css')
+    res.setHeader('Content-Type', 'text/css');
     res.send(`body {
       font-family: Arial;
       font-size: 16px;
