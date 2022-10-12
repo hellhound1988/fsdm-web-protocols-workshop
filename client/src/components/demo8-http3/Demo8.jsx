@@ -1,4 +1,4 @@
-import { Button, List, ListItem, Grid, Card, CardContent, Typography, Box } from '@mui/material';
+import { Button, Typography, Box } from '@mui/material';
 import React from 'react';
 
 export default function Demo8() {
@@ -8,6 +8,7 @@ export default function Demo8() {
       style.href = 'https://quic.aiortc.org/style.css?' + i;
       style.rel = 'stylesheet';
       document.body.appendChild(style);
+      style.onload = () => { style.remove() } // not to break styles
     }
   };
 

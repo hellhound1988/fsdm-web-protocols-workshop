@@ -1,4 +1,4 @@
-import { Button, List, ListItem, Grid, Card, CardContent, Typography, Box } from '@mui/material';
+import { Button, Typography, Box } from '@mui/material';
 import React from 'react';
 
 export default function Demo5() {
@@ -8,6 +8,7 @@ export default function Demo5() {
       style.href = 'https://localhost:13005/style.css?' + i;
       style.rel = 'stylesheet';
       document.body.appendChild(style);
+      style.onload = () => { style.remove() } // not to break styles
     }
   };
 

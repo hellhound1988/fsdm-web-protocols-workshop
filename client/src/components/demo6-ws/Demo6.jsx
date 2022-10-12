@@ -1,4 +1,4 @@
-import { Button, List, ListItem, Grid, Card, CardContent, Typography, Box } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 export default function Demo6() {
