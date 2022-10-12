@@ -1,3 +1,12 @@
+/**
+ * This example is prepared by Mikhail Beschastnov for
+ * Full-Stack Developers Meetup (Web Protocols Workshop)
+ * https://www.meetup.com/vancouver-full-stack-web-developers/
+ *
+ * If you have any questions or would like to connect, please find me:
+ * - on LinkedIn: https://www.linkedin.com/in/mbeschastnov/
+ * - over email: mike.beschastnov@gmail.com
+ */
 const express = require('express');
 const cors = require('cors');
 const http = require('http');

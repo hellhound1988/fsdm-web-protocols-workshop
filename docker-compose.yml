@@ -19,6 +19,7 @@ services:
     command: npm run start:demo2
     ports:
       - 13002:13002
+      - 9229:9229
 
   server-demo3:
     build:
